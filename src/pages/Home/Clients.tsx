@@ -17,6 +17,8 @@ const logos = [
   { id: 5, image: "/images/UlavTech.png", alt: "Ulav Tech", width:300, height:250 },
   { id: 6, image: "/images/MTSSDS.png", alt: "Mother Therasa Social Service Development Society", width:300, height:150 },
   { id: 7, image: "/images/ShanmugaTextiles.png", alt: "Sri Shanmuga Textiles", width:300, height:150 },
+  { id: 8, image: "/images/SkillEd.png", alt: "Sri Shanmuga Textiles", width:300, height:150 },
+
 
 ];
 

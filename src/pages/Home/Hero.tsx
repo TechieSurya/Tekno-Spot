@@ -36,13 +36,13 @@ const Hero = () => {
               #1 Digital Marketing Company in Trichy  
             </h1>
             <div className="text-3xl md:text-2xl font-medium md:mt-3 md:mb-8 md:left-16 relative items-center mb-7 mt-5">
-              <h2 className="font-inter text-xl text-darkBlue md:mb-3">
-                Tekno Spot is a Leading Digital Marketing Agency <br/>
-                based out in Trichy. With professional expertise our<br/>
-                expert team provides Web Designing, Web Development, <br/>
-                E-Commerce Development, SEO Services, Social Media Marketing, <br/>
+              <p className="font-inter text-xl text-darkBlue md:mb-3 text-justify w-[550px]">
+                Tekno Spot is a Leading Digital Marketing Agency 
+                based out in Trichy. With professional expertise our
+                expert team provides Web Designing, Web Development
+                E-Commerce Development, SEO Services, Social Media Marketing
                 Content Marketing, Graphics Design and more.
-              </h2>
+              </p>
                <div className='flex sm:flex-row flex-col sm:items-center sm:space-x-10 mt-6'>
                 <div className='flex items-center space-x-4'>
                     <Image src="/images/google.png" alt="" 

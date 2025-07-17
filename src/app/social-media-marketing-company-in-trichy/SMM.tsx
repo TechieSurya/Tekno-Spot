@@ -117,7 +117,7 @@ const SMM = () => {
                 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
                   Get Social with the
                   <br />
-                  <span className="text-blue-600">Top Social Media Marketing Agency in Trichy</span>
+                  <span className="text-brandBlue">Top Social Media Marketing Agency in Trichy</span>
                 </h1>
               </div>
               
@@ -134,7 +134,7 @@ const SMM = () => {
                 data-aos="fade-up"
                 onClick={openPopup}
                 size="lg"
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-4 py-4 text-base font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="bg-brandBlue hover:bg-brandGreen text-white px-4 py-4 text-base font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 SPEAK TO AN EXPERT
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -201,11 +201,11 @@ const SMM = () => {
               <h2 
               data-aos="fade-right"
               className="text-3xl lg:text-4xl font-bold text-gray-900">
-                Our Featured <span className="text-blue-600">Social Media Marketing Services</span>
+                Our Featured <span className="text-brandBlue">Social Media Marketing Services</span>
               </h2>
               <h3 
               data-aos="fade-up"
-              className="text-xl lg:text-2xl font-semibold text-green-600">
+              className="text-xl lg:text-2xl font-semibold text-brandGreen">
                 Comprehensive Digital Marketing Solutions
               </h3>
             </div>
@@ -233,10 +233,10 @@ const SMM = () => {
               <div className="space-y-4">
                 <Card 
                 data-aos="fade-left"
-                className="border-l-4 border-l-blue-500 shadow-lg hover:shadow-xl transition-shadow">
+                className="border-l-4 border-brandBlue shadow-lg hover:shadow-xl transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <TrendingUp className="w-8 h-8 text-blue-600 mt-1" />
+                      <TrendingUp className="w-8 h-8 text-brandBlue mt-1" />
                       <div>
                         <h4 className="font-semibold text-gray-900 mb-2">Increased Engagement</h4>
                         <p className="text-gray-600">Drive meaningful interactions with your target audience across all platforms</p>
@@ -248,10 +248,10 @@ const SMM = () => {
                 <Card 
                 data-aos="fade-left"
                 data-aos-delay="200"
-                className="border-l-4 border-l-green-500 shadow-lg hover:shadow-xl transition-shadow">
+                className="border-l-4 border-brandGreen shadow-lg hover:shadow-xl transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <Users className="w-8 h-8 text-green-600 mt-1" />
+                      <Users className="w-8 h-8 text-brandGreen mt-1" />
                       <div>
                         <h4 className="font-semibold text-gray-900 mb-2">Brand Awareness</h4>
                         <p className="text-gray-600">Build recognition and trust with your ideal customers in Trichy and beyond</p>
@@ -263,10 +263,10 @@ const SMM = () => {
                 <Card 
                 data-aos="fade-left"
                 data-aos-delay="400"
-                className="border-l-4 border-l-purple-500 shadow-lg hover:shadow-xl transition-shadow">
+                className="border-l-4 border-brandYellow shadow-lg hover:shadow-xl transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <Target className="w-8 h-8 text-purple-600 mt-1" />
+                      <Target className="w-8 h-8 text-brandYellow mt-1" />
                       <div>
                         <h4 className="font-semibold text-gray-900 mb-2">Lead Generation</h4>
                         <p className="text-gray-600">Convert social media followers into qualified leads and customers</p>
@@ -283,7 +283,7 @@ const SMM = () => {
                 <h3 
                 data-aos="fade-right"
                 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-                  Why work with our <span className="text-blue-600">Social Media Marketing agency in Trichy?</span>
+                  Why work with our <span className="text-brandBlue">Social Media Marketing agency in Trichy?</span>
                 </h3>
               </div>
 
@@ -303,7 +303,7 @@ const SMM = () => {
                       data-aos="fade-up"
                       data-aos-delay={item.delay}
                       key={index} className="text-center">
-                        <div className="text-4xl font-bold text-blue-600 mb-2">{item.stat}</div>
+                        <div className="text-4xl font-bold text-brandGreen mb-2">{item.stat}</div>
                         <div className="text-lg font-semibold text-gray-900 mb-2">{item.label}</div>
                         <div className="text-gray-600">{item.description}</div>
                       </div>
@@ -324,7 +324,7 @@ const SMM = () => {
               <h3 
               data-aos="fade-right"
               className="text-3xl lg:text-4xl font-bold text-gray-900">
-                Our <span className="text-blue-600">Social Media Services</span>
+                Our <span className="text-brandBlue">Social Media Services</span>
               </h3>
               <p 
               data-aos="fade-up"

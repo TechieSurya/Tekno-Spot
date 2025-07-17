@@ -108,7 +108,7 @@ const About = () => {
             <div className="relative group">
               <div className="relative">
                 <Image
-                  src="/images/SuryaPrakashTeknoSpot.png"
+                  src="/images/SuryaPrakashTeknoSpot.jpg"
                   alt="Surya Prakash - Founder of Tekno Spot"
                   width={400}
                   height={400}

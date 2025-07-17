@@ -20,7 +20,7 @@ const ContactInfo = () => {
     {
       icon: MapPin,
       title: "Address",
-      value: "EDII - TABIF, Agricultural College and Research Institute, Tamil Nadu Agricultural University,Trichy-620027",
+      value: "EDII - TABIF, Anbil Dharmalingam Agricultural College and Research Institute, Navalurkottapattu, Trichy-620009",
       link: "https://maps.app.goo.gl/fknwWWT2FGrbtZWcA",
       color: "text-brandRed"
     }

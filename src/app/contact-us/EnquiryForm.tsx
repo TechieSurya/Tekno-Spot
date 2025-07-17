@@ -73,8 +73,8 @@ const EnquiryForm = () => {
     "UI/UX Design",
     "Digital Marketing",
     "E-commerce Solutions",
-    "Technical Support",
-    "Consulting Services",
+    "SEO Services",
+    "Social Media Marketing",
     "Other"
   ];
 
@@ -96,7 +96,7 @@ const EnquiryForm = () => {
               value={formData.name}
               onChange={handleInputChange}
               required
-              placeholder="John Doe"
+              placeholder="Full Name"
               className="border-gray-200 focus:border-blue-400 focus:ring-blue-100 transition-colors rounded-lg"
             />
           </div>
@@ -109,7 +109,7 @@ const EnquiryForm = () => {
               value={formData.email}
               onChange={handleInputChange}
               required
-              placeholder="john@example.com"
+              placeholder="Email Address"
               className="border-gray-200 focus:border-blue-400 focus:ring-blue-100 transition-colors rounded-lg"
             />
           </div>
@@ -124,7 +124,7 @@ const EnquiryForm = () => {
               type="tel"
               value={formData.mobile}
               onChange={handleInputChange}
-              placeholder="+1 (555) 123-4567"
+              placeholder="Mobile Number"
               className="border-gray-200 focus:border-blue-400 focus:ring-blue-100 transition-colors rounded-lg"
             />
           </div>

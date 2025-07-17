@@ -26,7 +26,8 @@ const ContactPopup = ({ isOpen, onClose }: ContactPopupProps) => {
     'Social Media Marketing',
     'Content Marketing',
     'PPC Advertising',
-    'Branding & Design'
+    'Branding & Design',
+    'Other'
   ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -90,7 +91,7 @@ const ContactPopup = ({ isOpen, onClose }: ContactPopupProps) => {
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Full Name"
               value={formData.name}
               onChange={handleInputChange}
               className="w-full p-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -101,7 +102,7 @@ const ContactPopup = ({ isOpen, onClose }: ContactPopupProps) => {
             <input
               type="email"
               name="email"
-              placeholder="Email Id"
+              placeholder="Email Address"
               value={formData.email}
               onChange={handleInputChange}
               className="w-full p-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -112,7 +113,7 @@ const ContactPopup = ({ isOpen, onClose }: ContactPopupProps) => {
             <input
               type="tel"
               name="mobile"
-              placeholder="Mobile no."
+              placeholder="Mobile Number"
               value={formData.mobile}
               onChange={handleInputChange}
               className="w-full p-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -141,7 +142,7 @@ const ContactPopup = ({ isOpen, onClose }: ContactPopupProps) => {
             {/* Message field */}
             <textarea
               name="message"
-              placeholder="Message"
+              placeholder="Tell us about your Enquiry"
               value={formData.message}
               onChange={handleInputChange}
               rows={4}

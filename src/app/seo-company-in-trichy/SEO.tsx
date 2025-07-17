@@ -66,7 +66,7 @@ const SEO = () => {
                 data-aos="fade-up"
                 onClick={openPopup}
                 size="lg"
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-4 py-4 text-base font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="bg-brandBlue hover:bg-brandGreen text-white px-4 py-4 text-base font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 SPEAK TO AN EXPERT
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -154,11 +154,11 @@ const SEO = () => {
             <h2 
             data-aos="fade-right"
             className="text-3xl lg:text-4xl font-bold text-gray-900">
-              What is <span className="text-blue-600">SEO</span>
+              What is <span className="text-brandBlue">SEO</span>
             </h2>
             <h3 
             data-aos="fade-up"
-            className="text-xl lg:text-2xl font-semibold text-green-600">
+            className="text-xl lg:text-2xl font-semibold text-brandGreen">
               Search Engine Optimization
             </h3>
           </div>
@@ -186,10 +186,10 @@ const SEO = () => {
             <div className="space-y-4">
               <Card 
               data-aos="fade-left"
-              className="border-l-4 border-l-blue-500 shadow-lg hover:shadow-xl transition-shadow">
+              className="border-l-4 border-brandBlue shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <TrendingUp className="w-8 h-8 text-blue-600 mt-1" />
+                    <TrendingUp className="w-8 h-8 text-brandBlue mt-1" />
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Increased Visibility</h4>
                       <p className="text-gray-600">Higher rankings on Google attract more visitors to your website</p>
@@ -201,10 +201,10 @@ const SEO = () => {
               <Card 
               data-aos="fade-left"
               data-aos-delay="200"
-              className="border-l-4 border-l-green-500 shadow-lg hover:shadow-xl transition-shadow">
+              className="border-l-4 border-brandGreen shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <Target className="w-8 h-8 text-green-600 mt-1" />
+                    <Target className="w-8 h-8 text-brandGreen mt-1" />
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Targeted Traffic</h4>
                       <p className="text-gray-600">Attract qualified leads who are actively searching for your services</p>
@@ -216,10 +216,10 @@ const SEO = () => {
               <Card 
               data-aos="fade-left"
               data-aos-delay="400"
-              className="border-l-4 border-l-purple-500 shadow-lg hover:shadow-xl transition-shadow">
+              className="border-l-4 border-brandYellow shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <CheckCircle className="w-8 h-8 text-purple-600 mt-1" />
+                    <CheckCircle className="w-8 h-8 text-brandYellow mt-1" />
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Build Trust & Credibility</h4>
                       <p className="text-gray-600">Top rankings establish your business as an authority in your industry</p>
@@ -236,7 +236,7 @@ const SEO = () => {
               <h3 
               data-aos="fade-right"
               className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-                Our <span className="text-blue-600">SEO Strategies</span>
+                Our <span className="text-brandBlue">SEO Strategies</span>
               </h3>
             </div>
 
@@ -263,7 +263,7 @@ const SEO = () => {
               <h3 
               data-aos="fade-right"
               className="text-3xl lg:text-4xl font-bold text-gray-900">
-                The Benefits of Investing in <span className="text-blue-600">SEO Services</span>
+                The Benefits of Investing in <span className="text-brandBlue">SEO Services</span>
               </h3>
               <p
               data-aos="fade-up"
@@ -352,7 +352,7 @@ const SEO = () => {
             <h3 
             data-aos="fade-right"
             className="text-3xl lg:text-4xl font-bold text-gray-900">
-              Our <span className="text-blue-600">SEO Services</span>
+              Our <span className="text-brandBlue">SEO Services</span>
             </h3>
             <p 
             data-aos="fade-up"

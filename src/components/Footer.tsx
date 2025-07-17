@@ -28,12 +28,12 @@ const navItems: NavItem[] = [
       href: "/web-design-company-in-trichy"
     },
     {
-      title: "Careers",
-      href: "/"
+      title: "App Development",
+      href: "/mobile-app-development-company-in-trichy"
     },
     {
       title: "Contact Us",
-      href: "/"
+      href: "/contact-us"
     }
   ];
 
