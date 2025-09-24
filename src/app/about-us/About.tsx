@@ -197,7 +197,7 @@ const About = () => {
         <Image 
         width={80}
         height={80}
-        src="/images/Ellipsee.png" alt="" className="absolute left-30 -mt-0 z-10" />
+        src="/images/Ellipsee.png" alt="Illustration Design" className="absolute left-30 -mt-0 z-10" />
       </div>
     </div>
     {/* Foundation */}
@@ -207,9 +207,9 @@ const About = () => {
           <p 
           data-aos="fade-right"
           className="w-16 h-1 bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 place-self-center"></p>
-          <h1 data-aos="fade-up" className="text-3xl/11 text-center font-bold">
+          <h2 data-aos="fade-up" className="text-3xl/11 text-center font-bold">
             Foundation of Our Work
-          </h1>
+          </h2>
         </div>
 
         {/* Cards Section */}

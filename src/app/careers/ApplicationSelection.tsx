@@ -7,11 +7,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Send, Upload, CheckCircle } from "lucide-react";
-import { db, storage } from "../firebaseConfig";
+import { db, storage } from "../../lib/firebaseConfig";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 const ApplicationSection = () => {
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -31,9 +32,10 @@ const ApplicationSection = () => {
 
     // Upload Resume if exists
     if (formData.resume) {
-      const fileName = `${Date.now()}_${formData.name.replace(/\s/g, '_')}_${formData.resume.name}`;
-      const storageRef = ref(storage, `resumes/${formData.email}/${fileName}`);
-      const snapshot = await uploadBytes(storageRef, formData.resume);
+     const safeEmail = formData.email.replace(/[@.]/g, "_"); // replace @ and . with _
+     const fileName = `${Date.now()}_${formData.name.replace(/\s+/g, '_')}_${formData.resume.name.replace(/\s+/g, '_')}`;
+     const storageRef = ref(storage, `resumes/${safeEmail}/${fileName}`);
+     const snapshot = await uploadBytes(storageRef, formData.resume);
       resumeURL = await getDownloadURL(snapshot.ref);
     }
 
@@ -166,12 +168,11 @@ const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
                         <SelectValue placeholder="Select a position" />
                       </SelectTrigger>
                       <SelectContent className="bg-white text-black border border-muted">
-                        <SelectItem value="senior-full-stack">Senior Full Stack Developer</SelectItem>
-                        <SelectItem value="product-designer">Product Designer</SelectItem>
-                        <SelectItem value="devops-engineer">DevOps Engineer</SelectItem>
-                        <SelectItem value="product-manager">Product Manager</SelectItem>
-                        <SelectItem value="marketing-specialist">Marketing Specialist</SelectItem>
-                        <SelectItem value="sales-representative">Sales Development Representative</SelectItem>
+                        <SelectItem value="full-stack">Full Stack Developer</SelectItem>
+                        <SelectItem value="uiux-designer">UI/UX Designer</SelectItem>
+                        <SelectItem value="frontend-developer">Front End Developer</SelectItem>
+                        <SelectItem value="app-developer">Mobile App Developer</SelectItem>
+                        <SelectItem value="marketing-specialist">Digital Marketing Specialist</SelectItem>
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>
@@ -193,6 +194,7 @@ const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
                       </SelectContent>
                     </Select>
                   </div>
+                  
 
                   <div>
                     <Label htmlFor="coverLetter">Cover Letter</Label>
@@ -274,7 +276,7 @@ const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
                     </div>
                     <div>
                       <p className="font-medium">Office Hours</p>
-                      <p className="text-muted-foreground">Monday - Friday, 9 AM - 6 PM PST</p>
+                      <p className="text-muted-foreground">Monday - Friday, 9 AM - 6 PM IST</p>
                     </div>
                   </div>
                 </CardContent>
@@ -283,7 +285,7 @@ const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
               <Card className="border-0 bg-muted/20 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <h3 className="font-semibold mb-4">Equal Opportunity</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                     We are an equal opportunity employer committed to diversity and inclusion. 
                     We welcome applications from all qualified candidates regardless of race, 
                     gender, age, religion, sexual orientation, or disability status.

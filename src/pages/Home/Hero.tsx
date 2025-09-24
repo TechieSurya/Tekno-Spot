@@ -36,7 +36,7 @@ const Hero = () => {
               #1 Digital Marketing Company in Trichy  
             </h1>
             <div className="text-3xl md:text-2xl font-medium md:mt-3 md:mb-8 md:left-16 relative items-center mb-7 mt-5">
-              <p className="font-inter text-xl text-darkBlue md:mb-3 text-justify w-[550px]">
+              <p className="font-inter text-xl text-darkBlue md:mb-3 text-justify md:w-[550px]">
                 Tekno Spot is a Leading Digital Marketing Agency 
                 based out in Trichy. With professional expertise our
                 expert team provides Web Designing, Web Development
@@ -45,15 +45,15 @@ const Hero = () => {
               </p>
                <div className='flex sm:flex-row flex-col sm:items-center sm:space-x-10 mt-6'>
                 <div className='flex items-center space-x-4'>
-                    <Image src="/images/google.png" alt="" 
+                    <Image src="/images/google.png" alt="Google" 
                     width={40}
                     height={40}
                     />
                     <div>
                         <div className='flex items-center space-x-2'>
-                         <h1 className='text-lg sm:text-xl md:text-2xl  font-bold'>
+                         <h2 className='text-lg sm:text-xl md:text-2xl  font-bold'>
                             4.9
-                         </h1>
+                         </h2>
                          <div className='flex items-center'>
                             <FaStar className='w-4 h-4 text-yellow-500'/>
                             <FaStar className='w-4 h-4 text-yellow-500'/>
@@ -66,15 +66,15 @@ const Hero = () => {
                     </div>
                 </div>
                  <div className='flex items-center space-x-4'>
-                    <Image src="/images/linkedin.png" alt="" 
+                    <Image src="/images/linkedin.png" alt="LinkedIn" 
                     width={40}
                     height={40}
                     />
                     <div>
                         <div className='flex items-center space-x-2'>
-                         <h1 className='text-lg sm:text-xl md:text-2xl font-bold'>
+                         <h2 className='text-lg sm:text-xl md:text-2xl font-bold'>
                             4.7
-                         </h1>
+                         </h2>
                          <div className='flex items-center'>
                             <FaStar className='w-4 h-4 text-yellow-500'/>
                             <FaStar className='w-4 h-4 text-yellow-500'/>

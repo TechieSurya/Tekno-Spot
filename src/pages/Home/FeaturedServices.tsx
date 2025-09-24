@@ -1,8 +1,8 @@
 'use client'
 
-import React, { useState } from 'react';
-import ContactPopup from '@/components/ContactPopup';
+import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const containerData = [
@@ -14,7 +14,7 @@ const containerData = [
     description:
       "Each website we create is perfectly crafted to deliver a 100% unique online experience tailored to your brand. Our expert web designers in trichy, transform your vision into a dynamic, custom web design that enhances your brand’s visibility, boosts engagement, and drives conversions. With us, your website design will not only stand out but also connect deeply with your audience.",
     aosDelay: "0",
-    url:"/Web-Development-Company-in-Trichy"
+    url:"/web-design-company-in-trichy"
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const containerData = [
     alt:"best web development company in trichy",
     description: "Tekno Spot, a leading web development company in trichy, specializes in building dynamic and innovative online solutions. From user-friendly online stores to comprehensive management systems, we deliver high-performing, well-executed projects tailored to drive digital success.",
     aosDelay: "400",
-    url:"/App-Development-Company-in-Trichy"
+    url:"/web-development-company-in-trichy"
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const containerData = [
     alt:"website developers in trichy",
     description: "Whether your website design needs a refresh or a complete website fix up, we analyze your site’s pain points and opportunities to revitalize your digital presence. Our expert web designers will breathe new life into your website, enhancing its functionality, user experience. The result? A modern, dynamic site that drives increased traffic and bolsters your industry reputation.",
     aosDelay: "600",
-    url:"/SEO-Services"
+    url:"/web-design-company-in-trichy"
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const containerData = [
     description:
       "We offer a comprehensive range of services designed to boost your website’s ranking and attract organic, non-paid google search traffic. Our team can conduct a thorough SEO audit of your website, providing actionable insights and strategies to enhance your organic reach and visibility on search engines.",
     aosDelay: "600",
-    url:"/Graphics-Design"
+    url:"/seo-company-in-trichy"
   },
   {
     id: 5,
@@ -52,24 +52,21 @@ const containerData = [
     description:
       "We specialize in e-commerce web development for leading content management systems (CMS) like Shopify, Magento, WooCommerce and custom e-commerce web development. Our experts can help you build and scale your eCommerce website across platforms, ensuring a seamless online shopping experience for your customers.",
     aosDelay: "600",
-    url:"/Graphics-Design"
+    url:"/web-development-company-in-trichy"
   },
 ];
 
 const FeaturedServices = () => {
 
-     const [isPopupOpen, setIsPopupOpen] = useState(false);
-    
-      const openPopup = () => setIsPopupOpen(true);
-      const closePopup = () => setIsPopupOpen(false);
+     
 
   return (
     <div className='flex justify-center items-center relative w-full py-16'>
       <section className="container">
         <div className="text-center mb-14">
-          <h1 data-aos="fade-up" className="text-3xl font-bold font-volkhov">
+          <h2 data-aos="fade-up" className="text-3xl font-bold font-volkhov">
             Our Interactive Website Design Services in Trichy
-          </h1>
+          </h2>
           <p
             data-aos="fade-up"
             className="text-base text-brandYellow font-semibold font-poppins"
@@ -102,15 +99,18 @@ const FeaturedServices = () => {
 
         {/* Details */}
         <div className="py-4 text-center px-4">
-          <h1 className="text-xl font-bold">{data.title}</h1>
+          <h2 className="text-xl font-bold">{data.title}</h2>
           <p className="text-gray-500 text-justify group-hover:text-white duration-300 text-base mb-4">
             {data.description}
           </p>
+          <Link
+          href={data.url}
+          >
           <button className="bg-brandRed hover:scale-105 duration-300 text-white py-2 px-4 rounded-full font-bold text-sm"
-          onClick={openPopup}
           > 
             Learn More
           </button>
+          </Link>
         </div>
       </div>
     ))}
@@ -138,21 +138,24 @@ const FeaturedServices = () => {
 
         {/* Details */}
         <div className="py-4 px-4">
-          <h1 className="text-xl font-bold">{data.title}</h1>
+          <h2 className="text-xl font-bold">{data.title}</h2>
           <p className="text-gray-500 text-justify group-hover:text-white duration-300 text-sm mt-2 mb-1">
             {data.description}
           </p>
+          <Link
+          href={data.url}
+          >
          <button className="bg-brandRed hover:scale-105 duration-300 text-white py-2 px-4 rounded-full font-bold text-sm"
-          onClick={openPopup}
           > 
             Learn More
           </button>
+          </Link>
         </div>
       </div>
     ))}
   </div>
 </div>
-         <ContactPopup isOpen={isPopupOpen} onClose={closePopup}/>
+         
       </section>
     </div>
   )

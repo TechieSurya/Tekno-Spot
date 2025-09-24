@@ -21,7 +21,7 @@ const navItems: NavItem[] = [
     },
     {
       title: "About Us",
-      href: "about-us"
+      href: "/about-us"
     },
     {
       title: "Web Design",
@@ -80,7 +80,7 @@ const Footer = () => {
         <div className="flex flex-col justify-between">
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-800">Contact Us</h3>
-            <p className="text-sm mb-2">EDII - TABIF, Agricultural College and Research Institute, Tamil Nadu Agricultural University,Trichy-620027</p>
+            <p className="text-sm mb-2 text-justify">EDII - TABIF, Anbil Dharmalingam Agricultural College and Research Institute, Navalurkottapattu, Trichy-620009</p>
             <a href="tel:+917604921773" className="text-sm hover:text-gray-900 transition">
               +91 76049 21773
             </a>

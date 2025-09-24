@@ -18,6 +18,7 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface DropdownItem {
   title: string;
@@ -97,7 +98,14 @@ const Navigation = () => {
         ]
       }
     },
-    
+    {
+      title: "Careers",
+      href: "/careers"
+    },    
+     {
+      title: "Blogs",
+      href: "/blogs"
+    },   
     {
       title: "Contact",
       href: "/contact-us"
@@ -166,7 +174,7 @@ const Navigation = () => {
                               </h3>
                               <div className="space-y-1">
                                 {section.items.map((dropdownItem, itemIndex) => (
-                                  <a
+                                  <Link
                                     key={itemIndex}
                                     href={dropdownItem.href}
                                     className="flex items-center p-3 rounded-lg hover:bg-red-600 transition-colors duration-200 group"
@@ -182,7 +190,7 @@ const Navigation = () => {
                                         {dropdownItem.description}
                                       </p> */}
                                     </div>
-                                  </a>
+                                  </Link>
                                 ))}
                               </div>
                             </div>

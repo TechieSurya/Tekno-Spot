@@ -52,7 +52,7 @@ const Sectors = () => {
                       <Wheat className="w-8 h-8 text-brandYellow" />
                     </div>
                     <h3 className="text-lg font-bold text-gray-900">FPO</h3>
-                    <p className="text-gray-600 text-sm">Farmer producer organization solutions</p>
+                    <p className="text-gray-600 text-sm">Farmer Producer Organization Solutions</p>
                   </div>
                 </CardContent>
               </Card>

@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Send } from 'lucide-react';
 import { collection, addDoc, Timestamp } from "firebase/firestore";
-import { db } from '../firebaseConfig';
+import { db } from '../../lib/firebaseConfig';
 
 
 const EnquiryForm = () => {

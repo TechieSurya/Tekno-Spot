@@ -14,9 +14,9 @@ const Review = () => {
                  data-aos="fade-right"
                  className="w-15 h-1 space-y-4 bg-gradient-to-r from-blue-500 via-purple-500 to-red-500
                 text-transparent mb-4"></p>
-                <h1 data-aos="fade-up" className='text-2xl font-bold text-brandGreen'
-                >Testimonials</h1>
-                <h1 data-aos="fade-up" className='text-3xl  font-semibold font-poppins'>What our clients are saying us?</h1>
+                <h2 data-aos="fade-up" className='text-2xl font-bold text-brandGreen'
+                >Testimonials</h2>
+                <h2 data-aos="fade-up" className='text-3xl  font-semibold font-poppins'>What our clients are saying us?</h2>
                 <p className='mt-2' data-aos="fade-up">
                     We take pride in delivering quality solutions that make a real impact. Here’s a glimpse of the trust and satisfaction our clients have shared through their feedback and ratings.
                 </p>

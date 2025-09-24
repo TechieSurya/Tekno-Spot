@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { X, ChevronDown } from 'lucide-react';
 import { collection, addDoc, Timestamp } from "firebase/firestore";
-import { db } from '../app/firebaseConfig';
+import { db } from "@/lib/firebaseConfig";
 
 interface ContactPopupProps {
   isOpen: boolean;

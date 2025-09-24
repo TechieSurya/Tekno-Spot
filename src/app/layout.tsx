@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import TawkToWidget from "@/components/TawkToWidget";
+import Script from "next/script";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,9 +29,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+         {/* Google Analytics Script */}
+        <Script
+          async
+          src={'https://www.googletagmanager.com/gtag/js?id=G-Q76Q7J5P0B8'}
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Q76Q7J5P0B');
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <TawkToWidget/>
         <Navigation/>
         {children}
         <Footer/>

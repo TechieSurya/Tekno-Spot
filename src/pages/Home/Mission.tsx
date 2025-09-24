@@ -106,7 +106,7 @@ const Mission = () => {
         <Image
         width={100}
         height={100}
-        src="/images/Ellipsee.png" alt="" className="absolute -mt-0 z-10"/>
+        src="/images/Ellipsee.png" alt="Ellipsee" className="absolute -mt-0 z-10"/>
       </div>
 
       {/* Image Section */}
@@ -115,7 +115,7 @@ const Mission = () => {
         <div 
         data-aos="fade-left"
         className="relative overflow-hidden">
-          <Image width={400} height={300} src="/images/TeknoSpot-Tech.png" alt="" className="sm:w-[45rem] md:-ml-4 lg:-ml-0"/>
+          <Image width={400} height={300} src="/images/TeknoSpot-Tech.png" alt="Tekno Spot Tech Solutions" className="sm:w-[45rem] md:-ml-4 lg:-ml-0"/>
         </div>
       </div>
 

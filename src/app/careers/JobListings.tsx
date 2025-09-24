@@ -8,63 +8,64 @@ import { MapPin, Clock, ChevronRight } from "lucide-react";
 const JobListings = () => {
   const [selectedDepartment, setSelectedDepartment] = useState("All");
   
-  const departments = ["All", "Developer", "Designer", "Marketing", "Content"];
+  const departments = ["All", "Developer", "Designer", "Marketing",];
   
   const jobs = [
     {
       title: "Full Stack Developer",
       department: "Developer",
-      location: "Remote",
+      location: "Trichy",
       type: "Full-time",
       salary: "$120k - $180k",
       description: "Join our engineering team to build scalable web applications using modern technologies.",
-      requirements: ["5+ years experience", "React/Node.js", "TypeScript", "AWS"]
+      requirements: ["0-2 years experience", "React/Node.js", "TypeScript", "AWS","Firebase"]
     },
+    
     {
-      title: "Product Designer",
+      title: "UI/UX Designer",
       department: "Designer",
-      location: "Tiruchirappalli",
+      location: "Trichy",
       type: "Full-time",
       salary: "$100k - $140k",
       description: "Shape the user experience of our products with your creative design skills.",
-      requirements: ["3+ years experience", "Figma", "User Research", "Prototyping"]
+      requirements: ["1-2 years experience", "Figma", "User Research", "Prototyping"]
     },
     {
-      title: "DevOps Engineer",
+      title: "Front-End Developer",
       department: "Developer",
       location: "Remote",
       type: "Full-time",
       salary: "$110k - $160k",
       description: "Build and maintain our infrastructure and deployment pipelines.",
-      requirements: ["4+ years experience", "Docker", "Kubernetes", "CI/CD"]
+      requirements: ["0-1 years experience", "React JS", "Next JS", "Tailwind CSS"]
+    },
+    {
+      title: "Mobile Application Developer",
+      department: "Developer",
+      location: "Trichy",
+      type: "Full-time",
+      salary: "$120k - $180k",
+      description: "Join our engineering team to build scalable Mobile applications using modern technologies.",
+      requirements: ["0-2 years experience", "React Native", "Flutter", "AWS","Firebase"]
     },
     {
       title: "Product Manager",
       department: "Marketing",
-      location: "Tiruchirappalli",
+      location: "Trichy",
       type: "Full-time",
       salary: "$130k - $170k",
       description: "Drive product strategy and work closely with engineering and design teams.",
-      requirements: ["5+ years experience", "Product Strategy", "Data Analysis", "Agile"]
+      requirements: ["5+ years experience", "Product Strategy", "Data Analysis",]
     },
     {
-      title: "Marketing Specialist",
+      title: "Digital Marketing Specialist",
       department: "Marketing",
-      location: "Remote",
+      location: "Trichy | Remote",
       type: "Full-time",
       salary: "$70k - $100k",
       description: "Help grow our brand and reach new customers through creative marketing campaigns.",
       requirements: ["2+ years experience", "Content Marketing", "SEO", "Analytics"]
     },
-    {
-      title: "Sales Development Representative",
-      department: "Content",
-      location: "Tiruchirappalli",
-      type: "Full-time",
-      salary: "$60k - $90k",
-      description: "Generate new business opportunities and build relationships with potential clients.",
-      requirements: ["1+ years experience", "CRM", "Lead Generation", "Communication"]
-    }
   ];
 
   const filteredJobs = selectedDepartment === "All" 
@@ -104,7 +105,7 @@ const JobListings = () => {
                     <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">
                       {job.title}
                     </CardTitle>
-                    <Badge variant="secondary" className="mb-3">
+                    <Badge variant="secondary" className="mb-3 font-bold text-black">
                       {job.department}
                     </Badge>
                   </div>
@@ -131,14 +132,14 @@ const JobListings = () => {
                   <p className="text-sm font-medium mb-2">Requirements:</p>
                   <div className="flex flex-wrap gap-2">
                     {job.requirements.map((req, idx) => (
-                      <Badge key={idx} variant="outline" className="text-xs">
+                      <Badge key={idx}  className="text-xs p-2 bg-darkBlue">
                         {req}
                       </Badge>
                     ))}
                   </div>
                 </div>
                 
-                <Button className="w-full group-hover:bg-primary/90 transition-colors">
+                <Button className="w-full bg-brandBlue">
                   Apply Now
                 </Button>
               </CardContent>

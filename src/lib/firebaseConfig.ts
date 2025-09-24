@@ -1,6 +1,7 @@
 // src/app/firebaseConfig.js or .ts
 
-import { initializeApp, getApps } from "firebase/app";
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
@@ -15,9 +16,8 @@ const firebaseConfig = {
   measurementId: "G-QFDGXCMXKB"
 };
 
-const app = !getApps().length ? initializeApp(firebaseConfig) : getApps()[0];
+const app = initializeApp(firebaseConfig);
 
-const storage = getStorage(app);
-const db = getFirestore(app);
-
-export { storage, db };
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+export const storage = getStorage(app);

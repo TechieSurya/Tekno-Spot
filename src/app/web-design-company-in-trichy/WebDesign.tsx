@@ -115,7 +115,7 @@ const WebDesign = () => {
   <section data-aos="fade-up" className="relative bg-cover bg-center bg-no-repeat text-black py-5">
     <div className="text-center mb-8">
       <h2 data-aos="fade-up" className="text-brandYellow font-semibold font-inter">Best Web Design in Trichy</h2>
-      <h1 data-aos="fade-up" className="text-2xl font-bold font-poppins">Why Choose Tekno Spot for Web Designing?</h1>
+      <h2 data-aos="fade-up" className="text-2xl font-bold font-poppins">Why Choose Tekno Spot for Web Designing?</h2>
     </div>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-6">
